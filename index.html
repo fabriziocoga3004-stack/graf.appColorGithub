@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector RGB Moderno</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg rgb-card">
+        <div class="card-body p-4">
+
+            <h3 class="text-center mb-4 fw-bold">🎨 Selector de Color RGB</h3>
+
+            <div class="row">
+                <!-- Controles -->
+                <div class="col-md-6">
+
+                    <!-- Color Picker -->
+                    <div class="mb-4 text-center">
+                        <label class="form-label fw-semibold">Color Picker</label>
+                        <input type="color"
+                               class="form-control form-control-color mx-auto"
+                               id="colorPicker"
+                               value="#000000">
+                    </div>
+
+                    <!-- Rojo -->
+                    <div class="mb-3">
+                        <label class="form-label">Rojo</label>
+                        <div class="d-flex gap-2 align-items-center">
+                            <input type="range" class="form-range red" min="0" max="255" id="redRange">
+                            <input type="number" class="form-control text-center" min="0" max="255" id="redInput">
+                        </div>
+                    </div>
+
+                    <!-- Verde -->
+                    <div class="mb-3">
+                        <label class="form-label">Verde</label>
+                        <div class="d-flex gap-2 align-items-center">
+                            <input type="range" class="form-range green" min="0" max="255" id="greenRange">
+                            <input type="number" class="form-control text-center" min="0" max="255" id="greenInput">
+                        </div>
+                    </div>
+
+                    <!-- Azul -->
+                    <div class="mb-3">
+                        <label class="form-label">Azul</label>
+                        <div class="d-flex gap-2 align-items-center">
+                            <input type="range" class="form-range blue" min="0" max="255" id="blueRange">
+                            <input type="number" class="form-control text-center" min="0" max="255" id="blueInput">
+                        </div>
+                    </div>
+
+                    <div class="mt-3 text-center">
+                        <p class="mb-1"><strong>RGB:</strong> <span id="rgbText">rgb(0, 0, 0)</span></p>
+                        <p><strong>HEX:</strong> <span id="hexText">#000000</span></p>
+                    </div>
+                </div>
+
+                <!-- Vista del color -->
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div id="colorBox"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

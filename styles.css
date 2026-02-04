@@ -1,0 +1,60 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Card principal */
+.rgb-card {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 20px;
+    border: none;
+    background: #ffffff;
+}
+
+/* Cuadro de color */
+#colorBox {
+    width: 260px;
+    height: 260px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#colorBox:hover {
+    transform: scale(1.05);
+}
+
+/* Sliders personalizados */
+.form-range.red::-webkit-slider-thumb {
+    background: #dc3545;
+}
+.form-range.green::-webkit-slider-thumb {
+    background: #198754;
+}
+.form-range.blue::-webkit-slider-thumb {
+    background: #0d6efd;
+}
+
+/* Inputs numéricos */
+input[type="number"] {
+    max-width: 90px;
+}
+
+/* Color picker centrado */
+.form-control-color {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Texto */
+p {
+    font-size: 0.95rem;
+}
