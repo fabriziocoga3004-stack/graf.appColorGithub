@@ -1,6 +1,6 @@
 #	Instituto Tecnologico de Pachuca 
 ## Materia: Graficacion 
-## Tema 1.2 Publicacion colavorrativos de codigo fuente 
+## Tema 1.1 Introducción a la programación de interfaces Web
 ## Autor: Alberto Fabrizio Cortes Garcia
 ## Fecha: 4/Febrero/2025
 La aplicación ofrece varias maneras de elegir un color desde controles
